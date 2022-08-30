@@ -27,12 +27,12 @@ const PageForm = ({ addPage }) => {
           required
           placeholder='author'
         />
-        <textarea>
+        <textarea
           name='body'
           value={page.body}
           onChange={ (e) => setPage({...page, body: e.target.value })}
           required
-        </textarea>
+        ></textarea>
         <button type='submit'>Submit</button>
       </form>
     </>
